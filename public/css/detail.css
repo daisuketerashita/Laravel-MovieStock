@@ -1,0 +1,17 @@
+.review-main {
+    width: 70%;
+}
+.review-image {
+    width: 30%;
+}
+.review-image img {
+    max-width: 100%;
+}
+.btn-back {
+    width: 10em;
+    margin: auto;
+}
+.review-main h2{
+    width: 80%;
+    border-bottom: 2px dotted #000;
+}
