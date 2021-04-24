@@ -60,4 +60,12 @@ class StockController extends Controller
         //トップへのリダイレクトとフラッシュメッセージ
         return redirect('/')->with('flash_message', '登録が完了しました');;
     }
+
+    //観た映画の削除機能
+    public function delete(Request $request){
+        $plan = Stock::find($request->id);
+        $plan->delete();
+        //リダイレクト
+        return redirect('/')->with('flash_message', '削除しました');
+    }
 }

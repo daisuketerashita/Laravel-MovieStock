@@ -9,9 +9,23 @@
 }
 .btn-back {
     width: 10em;
-    margin: auto;
+    margin: 20px auto;
 }
+.btn-delete_stock {
+    width: 10em;
+    margin: 0 auto 20px auto;
+    background: tomato;
+}
+.btn-delete_stock:hover{
+    color: #fff;
+}
+
 .review-main h2{
     width: 80%;
     border-bottom: 2px dotted #000;
+    margin-bottom: 2%;
+}
+
+.date_text{
+    font-size: 1.4rem;
 }

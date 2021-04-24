@@ -28,7 +28,7 @@
                 <input type='date' class='form-control' name='due_date' id="due_date">
               </div>
               <div class="form-group">
-                <label for="file1">映画のサムネイル</label>
+                <label for="file1">サムネイル</label>
                 <input type="file" id="file1" name='image' class="form-control-file">
               </div>
               <input type='submit' class='btn btn-primary' value='登録'>

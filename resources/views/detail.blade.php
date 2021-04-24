@@ -13,7 +13,7 @@
         <h2 class='h2'>映画のタイトル</h2>
         <p class='h2 mb20'>{{ $stock->title }}</p>
         <h2 class='h2'>鑑賞日</h2>
-        <p>{{ $stock->due_date }}</p>
+        <p class="date_text">{{ $stock->due_date }}</p>
       </section>  
       <aside class='review-image'>
 @if(!empty($stock->image))
@@ -23,7 +23,8 @@
 @endif
       </aside>
     </div>
-    <a href="{{ route('index') }}" class='btn btn-info btn-back mb20'>一覧へ戻る</a>
+    <a href="{{ route('index') }}" class='btn btn-info btn-back'>一覧へ戻る</a>
+    <a href="{{ route('stock.delete',['id' => $stock->id]) }}"class='btn btn-delete_stock' onClick="delete_alert(event);return false;">削除する</a>
   </div>
 </div>
 @endsection

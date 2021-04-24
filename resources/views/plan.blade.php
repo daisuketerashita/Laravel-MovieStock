@@ -19,7 +19,7 @@
                     <div class='image-wrapper'><img class='book-image' src="{{ asset('images/dummy.png') }}"></div>
                 @endif
                 <h3 class='h3 book-title'>{{$plan->title}}</h3>
-                <a href="{{ route('delete',['id' => $plan->id]) }}"class='btn btn-secondary detail-btn' onClick="delete_alert(event);return false;">削除する</a>
+                <a href="{{ route('plan.delete',['id' => $plan->id]) }}"class='btn btn-secondary detail-btn' onClick="delete_alert(event);return false;">削除する</a>
             </div>
         </div>
     </div>
