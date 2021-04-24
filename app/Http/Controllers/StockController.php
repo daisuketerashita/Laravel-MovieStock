@@ -63,8 +63,8 @@ class StockController extends Controller
 
     //観た映画の削除機能
     public function delete(Request $request){
-        $plan = Stock::find($request->id);
-        $plan->delete();
+        $stock = Stock::find($request->id);
+        $stock->delete();
         //リダイレクト
         return redirect('/')->with('flash_message', '削除しました');
     }
