@@ -68,4 +68,9 @@ class StockController extends Controller
         //リダイレクト
         return redirect('/')->with('flash_message', '削除しました');
     }
+
+    //使い方ページ
+    public function howto(){
+        return view('howto');
+    }
 }

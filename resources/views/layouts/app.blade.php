@@ -40,13 +40,13 @@
                 <div class="navbar-nav ml-auto">
                 </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
-                    </ul>
+                    
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('howto') }}" id="howto_link">使い方</a>
+                        </li>
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">

@@ -20,6 +20,8 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/detail/{id}/',[StockController::class,'detail'])->name('detail');
+//使い方ページ
+Route::get('/howto/',[StockController::class,'howto'])->name('howto');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
