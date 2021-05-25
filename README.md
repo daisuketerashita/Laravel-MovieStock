@@ -1,2 +1,1 @@
 # Laravel-MovieStock
-# Laravel-MovieStock
